@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest</title>
+</head>
+<!--ask for a number 4 times: “Number please….”
+using comparison operators and a conditional (in each iteration), determine the current largest number…
+remember to convert from a string to an int!
+say: “The largest number is x”-->
+<body>
+    <script>
+        var num1 = (parseInt(prompt("Number please...")));
+        var num2 = (parseInt(prompt("Another number please...")));
+        var num3 = (parseInt(prompt("One more mumber please...")));
+        var num4 = (parseInt(prompt("And the last number please...")));
+        var myArray = [num1,num2,num3,num4];
+        var largest = 0;
+
+     for( var i = 0; i < myArray.length; i++){
+          if(largest < myArray[i]) { 
+              largest = myArray[i]; 
+            }
+        } console.log("The largest number is " + largest);
+
+
+    </script>
+</body>
+</html>
